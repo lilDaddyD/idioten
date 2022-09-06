@@ -50,10 +50,23 @@ body{background:#ffffff}
     </div>
 </div>
 
+<script type="text/javascript">
+    function actualNextSibling(el) {    // needed to smooth out default firefox/IE behavior
+        do { el = el.nextSibling } while (el && el.nodeType !== 1);
+            return el;
+    }
+</script>
+<div onclick="actualNextSibling(this).style.display='block'; this.style.display='none'">
+    <img src="billeder/frækkerikke.PNG" alt="Billeder" style="cursor: pointer" />
+</div>
+<div style="display: none">
+    <iframe width="1920" height="480" src="https://www.youtube.com/watch?v=dQw4w9WgXcQ"frameborder="0" allowfullscreen></iframe>
+</div>
+	
 <div class="w3-content" style="max-width:1100px;">
 
     <div class="w3-row w3-padding-64" id="klikikke">    
-	<meta http-equiv="refresh" target="_blank; URL=https://www.youtube.com/watch?v=dQw4w9WgXcQ" />
+	
         <a target="_blank" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
 		<img src="billeder/frækkerikke.PNG" class="w3-round w3-image w3-opacity-min" alt="Billeder" width="1920" height="480">
     </div>
