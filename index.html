@@ -57,15 +57,11 @@ body{background:#ffffff}
     }
 </script>
     
-jQuery(document).ready(function( $ ) {
-  $('.video-selector iframe')[0].contentWindow.postMessage('{"event":"command","func":"playVideo","args":""}', '*');
-});
-    
 <div onclick="actualNextSibling(this).style.display='block'; this.style.display='none'">
     <img src="billeder/frækkerikke.PNG" alt="Billeder" width="1920" height="1080" style="cursor: pointer" />
 </div>
 <div style="display: none">
-    <iframe width="1920" height="1080" src="https://www.youtube.com/embed/dQw4w9WgXcQ?rel=0&autoplay=1" frameborder="0" allowfullscreen &enablejsapi=1></iframe>
+    <iframe width="1920" height="1080" src="https://www.youtube.com/watch?v=dQw4w9WgXcQ?autoplay=1" frameborder="0" allowfullscreen></iframe>
 </div>
 
             
